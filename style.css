@@ -1,0 +1,158 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@300&display=swap');
+
+
+
+
+
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+    background-color: #8a2c2c;
+    color: white;
+    height:50px ;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    
+    padding-left: 20px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+.play{
+    font-size: 0.6rem;
+    margin-left: 3px;
+}
+
+nav ul{
+   
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    
+    
+    font-size: small;
+    
+    
+}
+.game-container{
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    
+
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+    
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3,15vh);
+    grid-template-columns: repeat(3,15vw);
+    
+
+}
+.box{
+    font-weight: 700;
+    border: 2px solid black;
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.box:hover{
+    background-color:#eedede;
+    
+  
+}
+.gameInfo{
+    padding: 34px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.imgbox{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+button{
+    margin: 10px;
+    border: 2px solid ;
+    width: 10vw;
+    height:7vh;
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    color: white;
+    border-radius: 0.5rem;
+    
+    box-shadow: 2px 2px  #8a2c2c;
+}
+
+button:hover{
+    cursor: pointer;
+
+    
+    
+}
+button:active{
+    transform: translateY(3px);
+}
+
+.info{
+    font-size: 1.5rem;
+}
+
+.musicplayer{
+    bottom:0;
+}
+@media only screen and (max-width: 800px) {
+
+    .game-container{
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    button{
+        margin: 10px;
+        border: 2px solid ;
+        width: 20vw;
+        height:5vh;
+        background-color: black;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 700;
+        color: white;
+        border-radius: 0.5rem;
+        padding: 4px;
+        box-shadow: 2px 2px  #8a2c2c;
+    }
+    
+    
+  }
+
+
+
